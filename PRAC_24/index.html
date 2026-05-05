@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Reviews</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .content-padding {
+     padding: 10px;
+      }
+    img { 
+        width: 100%; 
+        border-radius: 10px;
+         margin-top: 10px; 
+        }
+  </style>
+</head>
+
+<body>
+
+<!-- HOME PAGE -->
+<div data-role="page" id="home">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Movie Reviews</h1>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" class="ui-btn-active">Home</a></li>
+        <li><a href="#movies" data-transition="slide">Movies</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+    <h2>Welcome</h2>
+    <p>Explore reviews of popular movies.</p>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 Movie Reviews</h4>
+  </div>
+
+</div>
+
+<!-- MOVIES PAGE -->
+<div data-role="page" id="movies">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Movies</h1>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="slide">Home</a></li>
+        <li><a href="#movies" class="ui-btn-active">Movies</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+
+    <div data-role="collapsible-set">
+
+      <div data-role="collapsible">
+        <h3>Inception</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7f/Inception_ver3.jpg">
+        <p><strong>Genre:</strong> Sci-Fi, Thriller</p>
+        <p><strong>Summary:</strong> A thief plants ideas in dreams.</p>
+        <p><strong>Review:</strong> Mind-bending and brilliant.</p>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Interstellar</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg">
+        <p><strong>Genre:</strong> Sci-Fi, Drama</p>
+        <p><strong>Summary:</strong> Space mission to save humanity.</p>
+        <p><strong>Review:</strong> Emotional and visually stunning.</p>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Avengers: Endgame</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg">
+        <p><strong>Genre:</strong> Action, Superhero</p>
+        <p><strong>Summary:</strong> Avengers fight Thanos again.</p>
+        <p><strong>Review:</strong> Epic and satisfying finale.</p>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>The Lion King</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg">
+        <p><strong>Genre:</strong> Animation, Drama</p>
+        <p><strong>Summary:</strong> Simba’s journey to become king.</p>
+        <p><strong>Review:</strong> Emotional and timeless.</p>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Spider-Verse</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d0/Spider-Man_Into_the_Spider-Verse_poster.png">
+        <p><strong>Genre:</strong> Animation, Action</p>
+        <p><strong>Summary:</strong> Multiple Spider-Men unite.</p>
+        <p><strong>Review:</strong> Stylish and innovative.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 Movie Reviews</h4>
+  </div>
+
+</div>
+
+</body>
+</html>

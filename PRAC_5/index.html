@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Store</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+
+<body style="background:#f8f9fa;">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand">ShopNow</span>
+</nav>
+
+<!-- MAIN -->
+<div class="container mt-4">
+
+    <h2 class="text-center mb-4">Product Listing</h2>
+
+    <!-- DROPDOWN FILTER -->
+    <div class="text-center mb-4">
+        <div class="dropdown d-inline">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Filter Category
+            </button>
+
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" onclick="filterProducts('all')">All</a>
+                <a class="dropdown-item" href="#" onclick="filterProducts('electronics')">Electronics</a>
+                <a class="dropdown-item" href="#" onclick="filterProducts('fashion')">Fashion</a>
+                <a class="dropdown-item" href="#" onclick="filterProducts('home')">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT GRID -->
+    <div class="row">
+
+        <!-- PRODUCT 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 product electronics">
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/200" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Phone</h5>
+                    <p>₹50000</p>
+                    <button class="btn btn-outline-primary btn-block">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 product fashion">
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/200" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>T-Shirt</h5>
+                    <p>₹1000</p>
+                    <button class="btn btn-outline-primary btn-block">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 product home">
+            <div class="card mb-3">
+                <img src="https://via.placeholder.com/200" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Lamp</h5>
+                    <p>₹2000</p>
+                    <button class="btn btn-outline-primary btn-block">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- JS -->
+<script>
+function filterProducts(category) {
+    let items = document.getElementsByClassName("product");
+
+    for (let i = 0; i < items.length; i++) {
+        if (category === "all" || items[i].classList.contains(category)) {
+            items[i].style.display = "block";
+        } else {
+            items[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

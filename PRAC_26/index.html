@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PICT Course Structure</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .content-padding { padding: 10px; }
+  </style>
+</head>
+
+<body>
+
+<!-- HOME PAGE -->
+<div data-role="page" id="home">
+
+  <div data-role="header" data-position="fixed">
+    <h1>PICT Course</h1>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" class="ui-btn-active">Home</a></li>
+        <li><a href="#structure" data-transition="slide">Structure</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+    <h2>B.E. Course Structure</h2>
+    <p>Explore subjects year-wise.</p>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 PICT</h4>
+  </div>
+
+</div>
+
+<!-- STRUCTURE PAGE -->
+<div data-role="page" id="structure">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Course Structure</h1>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="slide">Home</a></li>
+        <li><a href="#structure" class="ui-btn-active">Structure</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+
+    <div data-role="collapsible-set">
+
+      <div data-role="collapsible">
+        <h3>FE</h3>
+        <ul data-role="listview" data-inset="true">
+          <li>Engineering Maths</li>
+          <li>Physics</li>
+          <li>Chemistry</li>
+        </ul>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>SE</h3>
+        <ul data-role="listview" data-inset="true">
+          <li>Data Structures</li>
+          <li>OOP</li>
+          <li>DBMS</li>
+        </ul>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>TE</h3>
+        <ul data-role="listview" data-inset="true">
+          <li>Operating Systems</li>
+          <li>Computer Networks</li>
+          <li>Machine Learning</li>
+        </ul>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>BE</h3>
+        <ul data-role="listview" data-inset="true">
+          <li>Cloud Computing</li>
+          <li>AI</li>
+          <li>Project</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 PICT</h4>
+  </div>
+
+</div>
+
+</body>
+</html>

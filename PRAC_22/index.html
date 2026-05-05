@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PICT Mobile Site</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .content-padding {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HOME PAGE -->
+<div data-role="page" id="home">
+
+  <div data-role="header" data-position="fixed">
+    <h1>PICT</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" class="ui-btn-active">Home</a></li>
+        <li><a href="#courses" data-transition="slide">Courses</a></li>
+        <li><a href="#departments" data-transition="slide">Departments</a></li>
+        <li><a href="#contact" data-transition="slide">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+    <h2>About PICT</h2>
+    <p>Pune Institute of Computer Technology is a leading engineering college known for excellence in education and research.</p>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 PICT</h4>
+  </div>
+
+</div>
+
+<!-- COURSES PAGE -->
+<div data-role="page" id="courses">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Courses</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="slide">Home</a></li>
+        <li><a href="#courses" class="ui-btn-active">Courses</a></li>
+        <li><a href="#departments" data-transition="slide">Departments</a></li>
+        <li><a href="#contact" data-transition="slide">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+
+    <div data-role="collapsible-set">
+
+      <div data-role="collapsible">
+        <h3>Computer Engineering</h3>
+        <p>Focuses on programming, AI, and software development.</p>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Information Technology</h3>
+        <p>Covers data science, networking, and cybersecurity.</p>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>ENTC</h3>
+        <p>Deals with communication systems and electronics.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 PICT</h4>
+  </div>
+
+</div>
+
+<!-- DEPARTMENTS PAGE -->
+<div data-role="page" id="departments">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Departments</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="slide">Home</a></li>
+        <li><a href="#courses" data-transition="slide">Courses</a></li>
+        <li><a href="#departments" class="ui-btn-active">Departments</a></li>
+        <li><a href="#contact" data-transition="slide">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+    <ul data-role="listview" data-inset="true">
+      <li>Computer Engineering</li>
+      <li>Information Technology</li>
+      <li>ENTC</li>
+      <li>Applied Science</li>
+    </ul>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 PICT</h4>
+  </div>
+
+</div>
+
+<!-- CONTACT PAGE -->
+<div data-role="page" id="contact">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Contact</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="slide">Home</a></li>
+        <li><a href="#courses" data-transition="slide">Courses</a></li>
+        <li><a href="#departments" data-transition="slide">Departments</a></li>
+        <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+    <p><strong>Address:</strong> Pune, India</p>
+    <p><strong>Phone:</strong> +91-9876543210</p>
+    <p><strong>Email:</strong> pict@college.com</p>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 PICT</h4>
+  </div>
+
+</div>
+
+</body>
+</html>

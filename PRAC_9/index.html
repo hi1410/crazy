@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5 text-center">
+
+    <h2>🌤 Weather App</h2>
+
+    <input type="text" id="city" class="form-control w-50 mx-auto my-3" placeholder="Enter city name">
+
+    <button class="btn btn-primary" onclick="getWeather()">Check Weather</button>
+
+    <div id="result" class="mt-4"></div>
+
+</div>
+
+<script>
+
+// LOCAL DATA (IMPORTANT PART)
+const weatherData = {
+    pune: {temp: "28°C", humidity: "60%", condition: "Sunny"},
+    mumbai: {temp: "30°C", humidity: "70%", condition: "Cloudy"},
+    delhi: {temp: "35°C", humidity: "50%", condition: "Hot"},
+    bangalore: {temp: "25°C", humidity: "65%", condition: "Rainy"}
+};
+
+function getWeather() {
+    let city = document.getElementById("city").value.toLowerCase();
+
+    let resultDiv = document.getElementById("result");
+
+    if (weatherData[city]) {
+        let data = weatherData[city];
+
+        resultDiv.innerHTML = `
+            <h4>Weather in ${city}</h4>
+            <p>Temperature: ${data.temp}</p>
+            <p>Humidity: ${data.humidity}</p>
+            <p>Condition: ${data.condition}</p>
+        `;
+    } else {
+        resultDiv.innerHTML = `<p class="text-danger">City not found</p>`;
+    }
+}
+
+</script>
+
+</body>
+</html>

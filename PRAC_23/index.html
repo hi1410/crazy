@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PICT Clubs</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .content-padding {
+      padding: 10px;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HOME PAGE -->
+<div data-role="page" id="home">
+
+  <div data-role="header" data-position="fixed">
+    <h1>PICT Clubs</h1>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" class="ui-btn-active">Home</a></li>
+        <li><a href="#clubs" data-transition="slide">Clubs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+    <h2>Student Clubs</h2>
+    <p>Explore various student clubs and extracurricular activities at PICT.</p>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 PICT Clubs</h4>
+  </div>
+
+</div>
+
+<!-- CLUBS PAGE -->
+<div data-role="page" id="clubs">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Clubs</h1>
+
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="slide">Home</a></li>
+        <li><a href="#clubs" class="ui-btn-active">Clubs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+
+    <div data-role="collapsible-set">
+
+      <div data-role="collapsible">
+        <h3>Coding Club</h3>
+        <p><strong>Description:</strong> Coding contests, hackathons, workshops.</p>
+        <p><strong>Achievements:</strong> National Hackathon winners.</p>
+        <img src="https://via.placeholder.com/400x200?text=Coding+Club">
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Robotics Club</h3>
+        <p><strong>Description:</strong> Builds robots and drones.</p>
+        <p><strong>Achievements:</strong> RoboCon winners.</p>
+        <img src="https://via.placeholder.com/400x200?text=Robotics+Club">
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Dance Club</h3>
+        <p><strong>Description:</strong> Cultural dance performances.</p>
+        <p><strong>Achievements:</strong> Firodiya winners.</p>
+        <img src="https://via.placeholder.com/400x200?text=Dance+Club">
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Music Club</h3>
+        <p><strong>Description:</strong> Band and musical events.</p>
+        <p><strong>Achievements:</strong> Battle of Bands winners.</p>
+        <img src="https://via.placeholder.com/400x200?text=Music+Club">
+      </div>
+
+    </div>
+
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 PICT Clubs</h4>
+  </div>
+
+</div>
+
+</body>
+</html>

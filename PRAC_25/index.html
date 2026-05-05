@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+
+  <!-- jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <!-- jQuery and jQuery Mobile JS -->
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .content-padding {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HOME PAGE -->
+<div data-role="page" id="home">
+
+  <div data-role="header" data-position="fixed">
+    <h1>My Portfolio</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" class="ui-btn-active">Home</a></li>
+        <li><a href="#projects" data-transition="slide">Projects</a></li>
+        <li><a href="#skills" data-transition="slide">Skills</a></li>
+        <li><a href="#contact" data-transition="slide">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+    <h2>Welcome</h2>
+    <p>Hello! I am a passionate developer interested in AI, Web Development, and Software Engineering.</p>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 My Portfolio</h4>
+  </div>
+
+</div>
+
+<!-- PROJECTS PAGE -->
+<div data-role="page" id="projects">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Projects</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="slide">Home</a></li>
+        <li><a href="#projects" class="ui-btn-active">Projects</a></li>
+        <li><a href="#skills" data-transition="slide">Skills</a></li>
+        <li><a href="#contact" data-transition="slide">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+
+    <div data-role="collapsible-set">
+
+      <div data-role="collapsible">
+        <h3>Fake News Detection</h3>
+        <p>Machine learning model to classify news as real or fake.</p>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Virtual Physiotherapist</h3>
+        <p>AI-based system to guide physical therapy exercises.</p>
+      </div>
+
+      <div data-role="collapsible">
+        <h3>Weather App</h3>
+        <p>Displays real-time weather using API.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 My Portfolio</h4>
+  </div>
+
+</div>
+
+<!-- SKILLS PAGE -->
+<div data-role="page" id="skills">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Skills</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="slide">Home</a></li>
+        <li><a href="#projects" data-transition="slide">Projects</a></li>
+        <li><a href="#skills" class="ui-btn-active">Skills</a></li>
+        <li><a href="#contact" data-transition="slide">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+
+    <ul data-role="listview" data-inset="true">
+      <li>Python, Java, C++</li>
+      <li>Machine Learning, Deep Learning</li>
+      <li>React, Node.js</li>
+      <li>TensorFlow, PyTorch</li>
+    </ul>
+
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 My Portfolio</h4>
+  </div>
+
+</div>
+
+<!-- CONTACT PAGE -->
+<div data-role="page" id="contact">
+
+  <div data-role="header" data-position="fixed">
+    <h1>Contact</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#home" data-transition="slide">Home</a></li>
+        <li><a href="#projects" data-transition="slide">Projects</a></li>
+        <li><a href="#skills" data-transition="slide">Skills</a></li>
+        <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" class="content-padding">
+    <p><strong>Email:</strong> your@email.com</p>
+    <p><strong>Phone:</strong> +91-9876543210</p>
+    <p><strong>Location:</strong> Pune, India</p>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h4>© 2026 My Portfolio</h4>
+  </div>
+
+</div>
+
+</body>
+</html>
