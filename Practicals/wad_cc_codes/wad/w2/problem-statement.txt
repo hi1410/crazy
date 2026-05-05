@@ -1,0 +1,3 @@
+W2 Create a personal portfolio webpage using HTML and CSS. The webpage
+should showcase personal details, skills, projects, educational details, and contact
+information.
